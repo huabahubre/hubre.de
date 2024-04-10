@@ -7,14 +7,26 @@ html, body
   font-size: 10pt;
   font-weight: normal;
   font-style: normal;
-  color: #2e313a;
+  color: white;
   margin-top: 0px;
-  background: url(../images/bg.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   letter-spacing: 0.003em;
+
+  /*background: linear-gradient(314deg, #000000, #ba00df, #4b00d4);*/
+  /*background-size: 600% 600%;*/
+  /*background: url(../images/bg.jpg) no-repeat center center fixed; */
+  /*animation: BackgroundGradient 29s ease infinite;*/
+}
+
+#backgroundVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 figure {
@@ -56,27 +68,18 @@ figure.play:before {
     width: 72px
 }
 
-@font-face
-{
-  font-family: tilt-neon-X;
-  src: url('../fonts/TiltNeon-Regular.ttf'),
-  url('../fonts/TiltNeon-Regular.ttf');
+
+.background-animation {
+  background: linear-gradient(314deg, #000000, #ba00df, #4b00d4);
+  background-size: 600% 600%;
+
+  animation: BackgroundGradient 29s ease infinite;
 }
 
-
-@font-face
-{
-  font-family: permanent-marker-regular;
-  src: url('../fonts/PermanentMarker-Regular.ttf'),
-  url('../fonts/PermanentMarker-Regular.ttf');
-}
-
-
-@font-face
-{
-  font-family: work-sans-X;
-  src: url('../fonts/WorkSans-VariableFont_wght.ttf'),
-  url('../fonts/WorkSans-VariableFont_wght.ttf');
+@keyframes BackgroundGradient {
+  0%{background-position:0% 18%}
+  50%{background-position:100% 83%}
+  100%{background-position:0% 18%}
 }
 
 
@@ -104,10 +107,10 @@ figure.play:before {
   width: 80%;
   max-width: 1800px;
   min-height: 75%;
-  color: #000;
+  color: #ffffff;
   position: absolute;
   top: 14%;
-  bottom: 0;
+  bottom: 20px;
   left: 0;
   right: 0;
   margin: auto;
@@ -115,6 +118,16 @@ figure.play:before {
   text-align: left;
   overflow: visible;
 }
+
+
+.blurPanel {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.10);
+  border-radius: 20px;
+}
+
 
 .label
 {
@@ -133,11 +146,11 @@ figure.play:before {
 }
 
 
-/*Skill Nuggets*/
+/*Bullets*/
 
 .code
 {
-  background-color: #492E34;
+  background-color: #6c54ad;
   content: "Script";
 }
 
@@ -191,6 +204,7 @@ figure.play:before {
   background-size: 100%;
   box-shadow: 4px 4px 20px -6px rgba(0, 0, 0, 0.2);
   border-radius: 6px;
+  margin: 10px;
 }
 
 ul
@@ -257,19 +271,12 @@ li { margin-left: -1em }
 }
 
 /* images for the slides */
-/*.ka  { background-image: url("../images/ka_gif.gif"); }*/
-/*.ssq { background-image: url("../images/ssq_gif.gif"); }*/
-/*.goe { background-image: url("../images/goe_gif.gif"); }*/
-/*.geo { background-image: url("../images/geo_gif.gif"); }*/
-/*.mr2 { background-image: url("../images/mr2_gif.gif"); }*/
-/*.ichi { background-image: url("../images/ichi_gif.gif"); }*/
-/*.paz { background-image: url("../images/paz_gif.gif"); }*/
-/*.duet { background-image: url("../images/duet_gif.gif"); }*/
-/*.eot { background-image: url("../images/eot_gif.gif"); }*/
-/*.ice { background-image: url("../images/ice_gif.gif"); }*/
-/*.toki { background-image: url("../images/toki_gif.gif"); }*/
-.jay { background-image: url("../images/picture.jpg"); } 
-.stagerush { background-image: url("../images/stagerush.jpg"); } 
+.profile-picture { background-image: url("../images/profile-picture.jpg"); margin: 10px}
+.coinracer { background-image: url("../images/screenshots/screenshot_coinracer.jpg"); }
+.comingSoon { background-image: url("../images/screenshots/screenshot_comingSoon.png");}
+
+
+
 
 .youtube
 {
@@ -395,7 +402,7 @@ li { margin-left: -1em }
   font-size: 2.4rem;
   font-weight: normal;
   font-style: normal;
-  color: #2e313a;
+  color: white;
   margin-top: 0px;
   /*text-shadow: 2px 2px 2px rgba(150, 150, 150, 0.4);*/
   margin-bottom: -1rem;
@@ -427,7 +434,7 @@ li { margin-left: -1em }
   font-weight: normal;
   width: 100%;
   font-style: normal;
-  color: #2e313a;
+  color: white;
   margin-top: 5%;
   text-shadow: 2px 2px 2px rgba(150, 150, 150, 0.4);
   margin-bottom: 0px;
@@ -439,7 +446,7 @@ li { margin-left: -1em }
   font-size: 13pt;
   font-weight: normal;
   font-style: normal;
-  color: #2e313a;
+  color: white;
   margin-bottom: 0px;
   margin-top: -0.5em;
   text-align: right;
@@ -453,7 +460,7 @@ li { margin-left: -1em }
   font-size: 10pt;
   font-weight: normal;
   font-style: normal;
-  color: #2e313a;
+  color: white;
   margin-bottom: 1em;
   margin-top: 2em;
   line-height: 2em;
@@ -476,9 +483,10 @@ li { margin-left: -1em }
   display: inline-block;
 }
 
-#linkedin { background-image: url('../images/icon_in.png'); }
-#email { background-image: url('../images/icon_email.png'); }
-#fb { background-image: url('../images/icon_fb.png'); }
+.linkedin { background-image: url('../images/socials/icon_in.png'); }
+.email { background-image: url('../images/socials/icon_email.png'); }
+.fb { background-image: url('../images/socials/icon_fb.png'); }
+.instagram { background-image: url('../images/socials/icon_instagram.png'); }
 
 #contact
 {
@@ -489,7 +497,7 @@ li { margin-left: -1em }
 
 #contact a:link, #contact a:visited, #contact a
 {
-  color: #000;
+  color: white;
   font-style: italic;
   text-decoration: none;
 }
@@ -497,7 +505,7 @@ li { margin-left: -1em }
 #contact a:hover, #contact a:active
 {
   cursor: pointer;
-  color: #000;
+  color: white;
   font-style: italic;
   text-decoration: underline;
 }
@@ -510,7 +518,7 @@ li { margin-left: -1em }
 a:link,a:visited,a
 {
   /*color: #f03;*/
-  color: #000;
+  color: white;
   font-style: italic;
   text-decoration: none;
   cursor: pointer;
@@ -521,14 +529,39 @@ a:hover,a:active
   text-decoration: underline;
   font-style: italic;
   cursor: pointer;
-  color: #000;
+  color: white;
 }
 
 
 /*FONTS*/
 
+
+@font-face
+{
+  font-family: tilt-neon-X;
+  src: url('../fonts/TiltNeon-Regular.ttf'),
+  url('../fonts/TiltNeon-Regular.ttf');
+}
+
+
+@font-face
+{
+  font-family: permanent-marker-regular;
+  src: url('../fonts/PermanentMarker-Regular.ttf'),
+  url('../fonts/PermanentMarker-Regular.ttf');
+}
+
+
+@font-face
+{
+  font-family: work-sans-X;
+  src: url('../fonts/WorkSans-VariableFont_wght.ttf'),
+  url('../fonts/WorkSans-VariableFont_wght.ttf');
+}
+
 .tilt-neon-X {
   font-family: "Tilt Neon", sans-serif;
+  color: white;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -537,12 +570,14 @@ a:hover,a:active
 
 .permanent-marker-regular {
   font-family: "Permanent Marker", cursive;
+  color: white;
   font-weight: 400;
   font-style: normal;
 }
 
 .work-sans-X {
   font-family: "Work Sans", sans-serif;
+  color: white;
   font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
