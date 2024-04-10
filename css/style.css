@@ -150,32 +150,52 @@ figure.play:before {
 
 .code
 {
-  background-color: #6c54ad;
-  content: "Script";
+  background-color: #ad6ce8;
+  content: "";
 }
 
-.gamedesign
+.role
 {
-  background-color: #7C334B;
-  content: "Game Design";
+  background-color: #9245e3;
+  content: "";
 }
 
-.leveldesign
+.unity_style
 {
-  background-color: #A63661;
-  content: 'Level Design';
+  background-color: #b37dec;
+  content: "";
 }
 
-.vfx
+.unity
 {
-  background-color: #C83456;
-  content: "VFX";
+  background-color: #0d61ff;
+  content: "Unity";
 }
 
-.two-d
+.unity_tool
 {
-  background-color: #F65E43;
-  content: "2D Art";
+  background-color: #1D96D7FF;
+  content: "Unity";
+}
+
+.unity_gameStyle
+{
+  background-color: #0d61ff;
+  content: "";
+}
+
+
+.neurofeedback
+{
+  background-color: #23b1ee;
+  content: "";
+}
+
+
+.integration
+{
+  background-color: #545454;
+  content: "";
 }
 
 /*
@@ -194,7 +214,7 @@ figure.play:before {
 {
   width: 65%;
   min-width: 2px;
-  position:relative;
+  position: relative;
   display: block;
   float: left;
   clear: left;
@@ -274,7 +294,8 @@ li { margin-left: -1em }
 .profile-picture { background-image: url("../images/profile-picture.jpg"); margin: 10px}
 .coinracer { background-image: url("../images/screenshots/screenshot_coinracer.jpg"); }
 .comingSoon { background-image: url("../images/screenshots/screenshot_comingSoon.png");}
-
+.apostroph { background-image: url("../images/screenshots/screenshot_apostroph.jpg");}
+.mendi { background-image: url("../images/screenshots/screenshot_mendi.png");}
 
 
 
